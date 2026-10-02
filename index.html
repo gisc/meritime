@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#f5f0e5">
+<meta name="description" content="An interactive Chinese meridian clock with live time, twelve traditional two-hour periods and a bilingual guide. Cultural reference, not medical advice.">
+<title>Meridian Clock · 子午流注钟</title><style>:root{color-scheme:light;--bg:#f5f0e5;--ink:#292821;--muted:#736e61;--line:#ddd4c2;--accent:#386759;--gold:#ab8a4a}*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.6 system-ui,-apple-system,"Noto Sans CJK SC","Microsoft YaHei",sans-serif}header{max-width:1240px;margin:auto;padding:25px 40px;display:flex;justify-content:space-between;align-items:center;border-bottom:1px solid var(--line)}.brand{font:600 25px Georgia,serif;letter-spacing:-1px;text-decoration:none;color:var(--ink)}.brand span{font-size:30px;margin-left:10px;color:var(--accent)}.eyebrow{font-size:12px;color:var(--muted);letter-spacing:1px}main{max-width:1240px;margin:auto;padding:40px}.intro .kicker{margin:0}.kicker{font-size:10px;letter-spacing:2px;font-weight:650;color:var(--accent)}h1{font:500 48px/1.2 "Noto Serif CJK SC","Songti SC",serif;margin:12px 0}p{margin:10px 0}.intro>p:last-child{color:var(--muted)}.layout{display:grid;grid-template-columns:minmax(0,1.8fr) minmax(280px,1fr);gap:55px;align-items:center;margin:20px 0 48px}svg{display:block;width:100%;height:auto;filter:drop-shadow(0 12px 14px #67563220)}.dial-legend{text-align:center;color:var(--muted);font-size:12px;margin:16px 0}.dot{display:inline-block;width:8px;height:8px;background:var(--accent);border-radius:50%;margin-right:6px}.controls label{display:block;font-size:12px;color:var(--muted);margin-bottom:6px}select{width:100%;border:1px solid var(--line);border-radius:8px;padding:12px;background:#fffcf5;color:var(--ink);font:inherit;font-size:14px;min-height:46px}.date{font-size:13px;color:var(--muted);margin-top:25px}.digital{font-size:48px;font-variant-numeric:tabular-nums;font-weight:300;line-height:1.2;letter-spacing:-2px;margin:5px 0 24px}.current-card{border:1px solid #b5c6b9;background:#edf1e7;padding:24px;border-radius:14px}.current-card .kicker{margin:0}h2{font:500 24px/1.4 Georgia,"Noto Serif CJK SC",serif}.current-card h2{font-size:34px;margin:9px 0 0}.current-card #english{color:var(--accent);font-size:15px;margin-top:0}.range{font-size:23px;font-variant-numeric:tabular-nums;margin:14px 0}.progress{height:4px;background:#d1dacd;overflow:hidden;border-radius:4px}.progress>div{height:100%;background:var(--accent)}.remaining{font-size:12px;color:var(--muted);margin-bottom:0}.tip{font-size:12px;color:var(--muted);margin-top:18px}.selected{border-left:3px solid var(--gold);padding-left:16px;margin:20px 0}.selected h3{font-size:22px;margin:0}.selected p{font-size:13px}.selected button{border:0;border-bottom:1px solid var(--muted);padding:10px 0;background:none;cursor:pointer;font:inherit;font-size:13px;min-height:44px}.section-heading{display:flex;justify-content:space-between;align-items:center;gap:20px}.section-heading h2{margin:0}.section-heading h2 span{display:inline-block;color:var(--muted);font-size:16px;margin-left:12px}.section-heading p{font-size:12px;color:var(--muted)}.schedule-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin-top:18px}.period-row{font:inherit;text-align:left;background:#fffcf5;border:1px solid var(--line);border-radius:10px;padding:14px 16px;cursor:pointer;display:flex;justify-content:space-between;align-items:center;min-height:90px;color:var(--ink)}.period-row strong{display:block;font-size:19px;font-weight:500}.period-row small{display:block;font-size:11px;color:var(--muted)}.period-row .row-time{font-size:11px;font-variant-numeric:tabular-nums;color:var(--muted);white-space:nowrap}.period-row.active{background:#edf1e7;border-color:var(--accent)}.period-row.selected-row{outline:2px solid var(--gold);outline-offset:2px}button:hover{border-color:var(--accent)}:focus-visible{outline:3px solid var(--accent);outline-offset:4px}.sector{cursor:pointer;outline:none}.sector:hover path,.sector:focus-visible path{stroke:var(--gold);stroke-width:3}.sector text{pointer-events:none}footer{border-top:1px solid var(--line);margin-top:42px;padding-top:25px;color:var(--muted);font-size:12px}footer h2{color:var(--ink);font-size:19px;margin:0 0 8px}footer a{color:var(--accent)}.source{margin-top:18px;font-size:11px}@media(max-width:900px){.layout{gap:28px;grid-template-columns:minmax(0,1.4fr) minmax(250px,1fr)}.schedule-grid{grid-template-columns:repeat(3,1fr)}main{padding:30px}header{padding:20px 30px}.digital{font-size:42px}}@media(max-width:650px){header{padding:15px 22px}.eyebrow{display:none}main{padding:25px 20px}h1{font-size:36px}.intro>p:last-child{font-size:13px}.layout{display:flex;flex-direction:column;gap:20px;margin:12px 0 32px}.clock-panel{width:100%}.details{width:100%}.digital{font-size:46px}.date{margin-top:18px}.current-card{padding:20px}.section-heading{display:block}.section-heading h2{font-size:22px}.section-heading h2 span{font-size:14px;margin-left:8px}.schedule-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.period-row{padding:12px;display:block;min-height:109px}.row-time{display:block;margin-top:6px}footer{margin-top:30px}.dial-legend{font-size:10px;margin-top:7px}}
+
+.chinese-title{font:500 23px/1.4 "Noto Serif CJK SC",serif;color:var(--muted);margin:0 0 12px}
+</style>
+</head>
+<body>
+<header><a class="brand" href="./">Meridian Clock<span aria-hidden="true">◒</span></a><span class="eyebrow">A traditional rhythm of time</span></header>
+<main>
+<section class="intro"><p class="kicker">THE CHINESE MERIDIAN CLOCK</p><h1>Meridian Clock</h1><p lang="zh-Hans" class="chinese-title">子午流注钟</p><p>Twelve meridians. Twelve two-hour periods. One passing day.</p></section>
+<div class="layout">
+<section class="clock-panel" aria-label="Live meridian clock"><svg id="clock" viewBox="0 0 720 720" role="img" aria-labelledby="dial-title dial-desc"><title id="dial-title">Chinese meridian clock</title><desc id="dial-desc">A twelve-hour analogue clock with an inner ring for 23:00–11:00 and an outer ring for 11:00–23:00. The current two-hour period is highlighted.</desc></svg><p class="dial-legend"><span class="dot"></span>Highlighted sector = current traditional period</p></section>
+<aside class="details">
+<div class="controls"><label for="timezone">Clock timezone</label><select id="timezone"><option value="Asia/Singapore">Singapore · UTC+8</option><option value="local">Your device timezone</option><option value="Asia/Shanghai">China · UTC+8</option><option value="UTC">UTC</option></select></div>
+<p id="date" class="date"></p><p id="digital" class="digital" aria-label="Current time"></p>
+<div class="current-card"><p class="kicker" id="period-label">CURRENT TRADITIONAL PERIOD</p><h2 id="meridian" lang="zh-Hans"></h2><p id="english"></p><p id="range" class="range"></p><div class="progress" aria-hidden="true"><div id="progress-fill"></div></div><p id="remaining" class="remaining"></p></div>
+<div id="selected" class="selected" hidden><p class="kicker">EXPLORE A PERIOD</p><h3 id="selected-name"></h3><p id="selected-detail"></p><button id="back-live" type="button">Back to current period</button></div>
+<p class="tip">Tap a sector or a row below to explore. The hands always show live time.</p>
+</aside></div>
+<section class="schedule"><div class="section-heading"><h2>The twelve periods <span lang="zh-Hans">十二时辰</span></h2><p>Choose a period to see its meridian.</p></div><div id="schedule" class="schedule-grid"></div></section>
+<footer><h2>A cultural clock, not a medical instrument</h2><p>In traditional Chinese medicine, 子午流注 associates each two-hour period with a meridian. This clock illustrates that tradition. It does not measure organ activity or establish that an organ works only at these hours. It is not a diagnosis, treatment or health recommendation.</p><p lang="zh-Hans">本时钟展示传统中医子午流注学说，不用于诊断、治疗或提供健康建议。经络时段不代表器官只在该时段工作。</p><p class="source">Time periods use the selected civil timezone, not solar time. No tracking, account or server required. <a href="https://zh.wikipedia.org/wiki/%E5%AD%90%E5%8D%88%E6%B5%81%E6%B3%A8" target="_blank" rel="noopener noreferrer">Meridian/time reference ↗</a></p></footer>
+</main><script type="module">
+const meridians = [
+  {branch:'子',name:'胆经',full:'足少阳胆经',english:'Gallbladder',start:23,end:1},
+  {branch:'丑',name:'肝经',full:'足厥阴肝经',english:'Liver',start:1,end:3},
+  {branch:'寅',name:'肺经',full:'手太阴肺经',english:'Lung',start:3,end:5},
+  {branch:'卯',name:'大肠经',full:'手阳明大肠经',english:'Large intestine',start:5,end:7},
+  {branch:'辰',name:'胃经',full:'足阳明胃经',english:'Stomach',start:7,end:9},
+  {branch:'巳',name:'脾经',full:'足太阴脾经',english:'Spleen',start:9,end:11},
+  {branch:'午',name:'心经',full:'手少阴心经',english:'Heart',start:11,end:13},
+  {branch:'未',name:'小肠经',full:'手太阳小肠经',english:'Small intestine',start:13,end:15},
+  {branch:'申',name:'膀胱经',full:'足太阳膀胱经',english:'Bladder',start:15,end:17},
+  {branch:'酉',name:'肾经',full:'足少阴肾经',english:'Kidney',start:17,end:19},
+  {branch:'戌',name:'心包经',full:'手厥阴心包经',english:'Pericardium',start:19,end:21},
+  {branch:'亥',name:'三焦经',full:'手少阳三焦经',english:'Triple burner (Sanjiao)',start:21,end:23}
+];
+const activeIndex = hour => Math.floor(((hour + 1) % 24) / 2);
+const pad = n => String(n).padStart(2,'0');
+const timeRange = m => `${pad(m.start)}:00–${pad(m.end)}:00`;
+function clockParts(date,zone) {
+ const parts = new Intl.DateTimeFormat('en-GB',{timeZone:zone,hourCycle:'h23',hour:'2-digit',minute:'2-digit',second:'2-digit'}).formatToParts(date);
+ return Object.fromEntries(parts.filter(p=>['hour','minute','second'].includes(p.type)).map(p=>[p.type,Number(p.value)]));
+}
+
+const ns='http://www.w3.org/2000/svg',svg=document.querySelector('#clock');
+const el=(tag,attrs={},text)=>{const e=document.createElementNS(ns,tag);Object.entries(attrs).forEach(([k,v])=>e.setAttribute(k,v));if(text!==undefined)e.textContent=text;return e};
+const point=(r,a)=>[360+r*Math.sin(a*Math.PI/180),360-r*Math.cos(a*Math.PI/180)];
+const wedge=(inner,outer,a,b)=>{const p=point(outer,a),q=point(outer,b),r=point(inner,b),s=point(inner,a);return `M${p} A${outer},${outer} 0 0 1 ${q} L${r} A${inner},${inner} 0 0 0 ${s} Z`};
+svg.append(el('circle',{cx:360,cy:360,r:352,fill:'#c8b48a',stroke:'#938167','stroke-width':2}),el('circle',{cx:360,cy:360,r:341,fill:'#fffbed',stroke:'#e7ddc5','stroke-width':4}));
+for(let i=0;i<60;i++){const a=point(i%5===0?318:325,i*6),b=point(333,i*6);svg.append(el('line',{x1:a[0],y1:a[1],x2:b[0],y2:b[1],stroke:'#8f8878','stroke-width':i%5===0?2:1}));}
+const sectors=[];
+for(let ring=0;ring<2;ring++)for(let j=0;j<6;j++){
+ const idx=ring===0?j+6:j,m=meridians[idx],angle=j*60,inner=ring===0?214:119,outer=ring===0?308:214,r=(inner+outer)/2;
+ const g=el('g',{class:'sector',role:'button',tabindex:0,'aria-label':`${m.name}, ${m.english}, ${timeRange(m)}`,'data-index':idx});
+ const path=el('path',{d:wedge(inner,outer,angle-30,angle+30),fill:ring===0?'#efe4c7':'#f7f0da',stroke:'#c9bc9e','stroke-width':1});g.append(path);
+ const p=point(r,angle);g.append(el('text',{x:p[0],y:p[1]-5,'text-anchor':'middle','dominant-baseline':'middle',fill:'#292821','font-family':'"Noto Serif CJK SC", "Songti SC", serif','font-size':ring===0?28:23},m.name));
+ g.append(el('text',{x:p[0],y:p[1]+22,'text-anchor':'middle',fill:'#73664b','font-size':ring===0?13:11},`${m.branch} · ${pad(m.start)}–${pad(m.end)}`));
+ g.addEventListener('click',()=>selectPeriod(idx));g.addEventListener('keydown',e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();selectPeriod(idx)}});svg.append(g);sectors[idx]={g,path};
+}
+for(let h=1;h<=12;h++){const p=point(320,h*30);svg.append(el('text',{x:p[0],y:p[1],'text-anchor':'middle','dominant-baseline':'middle',fill:'#292821','font-size':22,'font-family':'Georgia,serif'},h));}
+// Taijitu: two equal halves with inverse dots.
+svg.append(el('circle',{cx:360,cy:360,r:111,fill:'#fffcf5'}),el('path',{d:'M360 249 A111 111 0 0 1 360 471 A55.5 55.5 0 0 1 360 360 A55.5 55.5 0 0 0 360 249',fill:'#292821'}),el('circle',{cx:360,cy:304.5,r:13,fill:'#292821'}),el('circle',{cx:360,cy:415.5,r:13,fill:'#fffcf5'}));
+const hand=(length,width,color)=>{const g=el('g',{'pointer-events':'none'});g.append(el('line',{x1:360,y1:385,x2:360,y2:360-length,stroke:'#000','stroke-opacity':.1,'stroke-width':width+3,'stroke-linecap':'round'}),el('line',{x1:360,y1:385,x2:360,y2:360-length,stroke:color,'stroke-width':width,'stroke-linecap':'round'}));svg.append(g);return g};
+const hourHand=hand(151,12,'#a88c79'),minuteHand=hand(240,8,'#b39783'),secondHand=hand(281,2,'#386759');svg.append(el('circle',{cx:360,cy:360,r:11,fill:'#bd9c55',stroke:'#917335','stroke-width':2}));
+const schedule=document.querySelector('#schedule');const rows=meridians.map((m,i)=>{const b=document.createElement('button');b.className='period-row';b.type='button';b.setAttribute('aria-label',`${m.name}, ${m.english}, ${timeRange(m)}`);b.innerHTML=`<span><strong lang="zh-Hans">${m.branch} · ${m.name}</strong><small>${m.english}</small></span><span class="row-time">${timeRange(m)}</span>`;b.onclick=()=>selectPeriod(i);schedule.append(b);return b});
+let selected=null,zone='Asia/Singapore',lastIndex=-1;
+function selectPeriod(i){selected=i;document.querySelector('#selected').hidden=false;document.querySelector('#selected-name').textContent=`${meridians[i].branch}时 · ${meridians[i].name}`;document.querySelector('#selected-detail').textContent=`${meridians[i].full} · ${meridians[i].english} · ${timeRange(meridians[i])}`;rows.forEach((r,j)=>{r.classList.toggle('selected-row',i===j);r.setAttribute('aria-pressed',String(i===j))})}
+document.querySelector('#back-live').onclick=()=>{selected=null;document.querySelector('#selected').hidden=true;rows.forEach(r=>{r.classList.remove('selected-row');r.setAttribute('aria-pressed','false')})};
+document.querySelector('#timezone').onchange=e=>{zone=e.target.value==='local'?Intl.DateTimeFormat().resolvedOptions().timeZone:e.target.value;tick()};
+function tick(){const now=new Date(),{hour:h,minute:m,second:s}=clockParts(now,zone),idx=activeIndex(h),current=meridians[idx];hourHand.setAttribute('transform',`rotate(${(h%12+m/60+s/3600)*30} 360 360)`);minuteHand.setAttribute('transform',`rotate(${(m+s/60)*6} 360 360)`);secondHand.setAttribute('transform',`rotate(${s*6} 360 360)`);document.querySelector('#digital').textContent=`${pad(h)}:${pad(m)}:${pad(s)}`;document.querySelector('#date').textContent=new Intl.DateTimeFormat('en-GB',{timeZone:zone,weekday:'short',day:'numeric',month:'long',year:'numeric'}).format(now);document.querySelector('#meridian').textContent=`${current.branch}时 · ${current.name}`;document.querySelector('#english').textContent=current.english;document.querySelector('#range').textContent=timeRange(current);const elapsed=((h-current.start+24)%24)*3600+m*60+s,left=7200-elapsed;document.querySelector('#progress-fill').style.width=`${elapsed/72}%`;document.querySelector('#remaining').textContent=`${Math.floor(left/3600)}h ${Math.floor(left%3600/60)}m until ${meridians[(idx+1)%12].name}`;
+if(idx!==lastIndex){sectors.forEach(({g,path},i)=>{const active=i===idx;path.setAttribute('fill',active?'#b7ccb8':i>=6?'#efe4c7':'#f7f0da');g.setAttribute('aria-current',active?'time':'false');rows[i].classList.toggle('active',active);rows[i].setAttribute('aria-current',active?'time':'false')});lastIndex=idx}}
+tick();setInterval(tick,1000);document.addEventListener('visibilitychange',()=>{if(!document.hidden)tick()});
+
+</script>
+</body></html>
